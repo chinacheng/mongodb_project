@@ -5,6 +5,7 @@ gem "mongo_mapper"
 gem "bson_ext"
 gem "execjs"
 gem 'therubyracer'
+gem 'minitest'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
