@@ -1,0 +1,17 @@
+development:
+  host: 127.0.0.1
+  port: 27017
+  database: mongodb_project_development
+
+test:
+  host: 127.0.0.1
+  port: 27017
+  database: mongodb_project_test
+
+# set these environment variables on your prod server
+production:
+  host: 127.0.0.1
+  port: 27017
+  database: mongodb_project
+  username: <%= ENV['MONGO_USERNAME'] %>
+  password: <%= ENV['MONGO_PASSWORD'] %>

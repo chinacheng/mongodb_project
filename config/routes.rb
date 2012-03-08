@@ -51,6 +51,7 @@ MongodbProject::Application.routes.draw do
   # root :to => 'welcome#index'
   root :to=>'index#index'
 
+  resources :users
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.

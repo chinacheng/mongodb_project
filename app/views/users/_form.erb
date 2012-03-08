@@ -1,0 +1,12 @@
+<%= form_for @user do |f|%>
+  <div>
+   姓名：<%= f.text_field :name %>
+  </div>
+  <div>
+  年龄：<%= f.text_field :age %>
+  </div>
+  <div>
+    <%= f.submit "提交"%>
+  </div>
+
+<% end %>
