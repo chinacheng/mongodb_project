@@ -1,8 +1,10 @@
+<%= link_to "新建", new_user_path%>
+
 <% @users.each do |user|%>
   <div>
     <%= user.name %> : <%= user.age %>
     <%= link_to "查看", user_path(user.id) %>
     <%= link_to "修改", edit_user_path(user.id) %>
-    <%= button_to "删除", user_path(user.id),:method=>:delete %>
+    <%= link_to "删除", user_path(user.id),:method=>:delete,:confirm=>"are you sure?" %>
   </div>
 <% end %>
